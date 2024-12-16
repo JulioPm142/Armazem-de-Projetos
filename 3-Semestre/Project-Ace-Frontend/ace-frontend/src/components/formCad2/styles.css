@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+h1 {
+    
+    display: flex;
+    font-family: sans-serif;
+    font-size: 2.5em;
+    color: #530082; 
+    margin: 39.8px 0px 15px 0px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.vol{
+  height: 40px;
+  width: 120px;
+  margin-top: 55px;
+  font-size: 25px;
+  border-radius: 7px;
+  border: 2px solid transparent;
+  color: #fff;
+  background-color: #530082;
+}
+
+.botaoA{
+    display: flex;
+    justify-content: center;
+}
+
+.bg{
+    display: flex;
+    justify-content: center;
+    margin: 24.2px;
+    gap: 40px;
+}
+.pge{
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+.info{
+    margin-top: 90px;
+}
+.errinho img {
+    width: 600px ;
+    height: 520px;
+}
+
+.coluna .coluna2 {
+    display: inline-block;
+}
+
+.coluna3  {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 7px;
+}
+
+.inputBoxCADCLI{
+   position: relative;
+   width: 420px; 
+   border-radius: 13px;
+}
+
+.inputBoxCADCLI input {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 12px;
+    outline: none;
+    color: #000;
+    font-size: 1em;
+}
+
+.inputBoxCADCLI span{
+    font-family: sans-serif;
+    position: absolute;
+    left: 0;
+    margin-top: 20px;
+    padding: 12px;
+    pointer-events: none;
+    font-size: 1em;
+    color: rgba(0, 0, 0, 0.25);
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.inputBoxCADCLI input:valid ~ span,
+.inputBoxCADCLI input:focus ~ span{
+    color: #000;
+    transform: translateX(10px) translateY(-7px);
+    font-size:0.90em;
+    padding: 0 20px;
+    background: #fff ;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    letter-spacing: 0.2em;
+}
+
+.inputBoxCADCLI input:valid,
+.inputBoxCADCLI input:focus{
+    border: 1px solid #000
+}
+
+@media (max-width: 1045px) {
+    .bg{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 15.8px;
+        gap: 0px;
+        flex-direction: column;
+        
+    }
+    .coluna3  {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+        transition: 1.5s;
+    }
+}
+
+@media (max-width: 790px) {
+    .inputBoxCADCLI {
+        position: relative;
+        width: 390px; 
+    }
+}
+
+@media (max-width: 790px) {
+    .inputBoxCADCLI {
+        position: relative;
+        width: 390px; 
+    }
+}
+
+
+@media (max-width: 410px) {
+    h1 {
+        transition: 800ms ease;
+        display: flex;
+        font-family: sans-serif;
+        font-size: 2em;
+        color: #530082; 
+        margin: 39.8px 0px 15px 0px;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .inputBoxCADCLI{
+        transition: 800ms ease;
+        position: relative;
+        width: 240px; 
+        border-radius: 13px;
+     }
+     
+
+
+}
+

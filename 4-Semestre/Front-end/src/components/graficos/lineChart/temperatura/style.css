@@ -1,0 +1,21 @@
+
+.square-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 40px;
+    height: 100%; 
+  }
+  
+  
+  .square1 {
+    width: calc(50% - 40px); 
+    height: calc(50% - 20px); 
+    background-color: rgba(0, 0, 0, 0.5); 
+    margin-bottom: 20px; 
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    padding-right: 10px;
+
+  }
+  

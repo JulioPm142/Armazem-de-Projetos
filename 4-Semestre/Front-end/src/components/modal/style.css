@@ -1,0 +1,306 @@
+.modalBackground {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  z-index: 1000;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.73);
+}
+
+.confirmationModalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.confirmationModalContent {
+  background: #353535;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.confirmationModalContent button {
+  margin: 5px;
+  width: 150px;
+  height: 45px;
+  margin: 10px;
+  border: none;
+  background-color: #007a78;
+  color: white;
+  border-radius: 8px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.body img {
+  width: 180px;
+  height: 185px;
+  display: flex;
+  align-items: flex-start;
+}
+.body .container-pai {
+  display: flex;
+  flex-direction: row;
+}
+.body .edit-input-container-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+.input-modal {
+  margin: 5px;
+  width: 100%;
+  border: 1px solid white;
+  border-radius: 15px;
+  background-color: transparent;
+}
+
+.modalContainer {
+  position: relative;
+  width: 650px;
+  height: 550px;
+  background-color: #353535;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  padding: 25px 50px;
+  filter: brightness(0.922);
+  border-radius: 15px;
+}
+
+.modalContainer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(58, 55, 55, 0.295);
+  z-index: -1;
+}
+
+.modalContainer .input-container-1 {
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+.modalContainer .input-container-2 {
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+.modalContainer .input-container-3 {
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+.modalContainer .input-container-1 .input-modal {
+  background-color: transparent;
+}
+.modalContainer .input-container-2 .input-modal {
+  background-color: transparent;
+}
+.modalContainer .input-container-3 .input-modal {
+  background-color: transparent;
+}
+.HrModal {
+  margin: 20px 0;
+  width: 100%;
+  background: white;
+}
+.modalContainer .title {
+  display: inline-block;
+  color: white;
+  text-align: center;
+}
+.x {
+  color: rgb(255, 255, 255);
+}
+.titleCloseBtn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.titleCloseBtn button {
+  background-color: transparent;
+  border: none;
+  font-size: 25px;
+  cursor: pointer;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.modalContainer .body {
+  padding: 1rem 0;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+/*   backup caso de merda
+  .modalContainer .body-2{
+    display: flex;
+    justify-content: space-between;
+  } */
+
+.modalContainer .body-2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Cria 4 colunas */
+  gap: 0.5px; /* Espaço entre os elementos */
+  max-height: 60px; /* Altura máxima de 40px */
+  overflow-y: auto; /*Adiciona rolagem vertical se necessário */
+}
+
+.modalContainer .body-2 .input-container-4 {
+  display: flex;
+  gap: 10px;
+}
+.modalContainer .body-2 .input-container-4 span {
+  color: #ffffff;
+}
+.modalContainer .body .input-container-1 {
+  width: 100%;
+}
+.modalContainer .body .input-container-1 .input-modal {
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+}
+
+input::placeholder {
+  color: #ffffff;
+}
+
+.modalContainer .body .flex-input {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.modalContainer .body .input-container-2,
+.input-container-3 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.modalContainer .body .input-container-2 .input-modal {
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+}
+.modalContainer .body .input-container-3 .input-modal {
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+}
+.modalContainer .body .input-modal {
+  padding: 13px 0;
+}
+.modalContainer .footer {
+  flex: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: row;
+}
+
+.modalContainer .footer button {
+  width: 150px;
+  height: 45px;
+  margin: 10px;
+  border: none;
+  background-color: #007a78;
+  color: white;
+  border-radius: 8px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.modalContainer .footer .delete {
+  width: 150px;
+  height: 45px;
+  margin: 10px;
+  border: none;
+  background-color: #5a050c;
+  color: white;
+  border-radius: 8px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#cancelBtn {
+  background-color: crimson;
+}
+
+h1 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.47rem;
+  margin-bottom: 7px;
+}
+
+/* Alerta modal */
+
+.dropdown-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.alerta-option {
+  font-size: 15px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: #cfcfcf;
+  border-radius: 8px;
+  width: 220px;
+  text-align: center;
+}
+
+.alerta-option-dropdown {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+label p {
+  color: white;
+}
+
+.parametro-option {
+  font-size: 15px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: #cfcfcf;
+  border-radius: 8px;
+  width: 220px;
+  text-align: center;
+}
+.parametro-option-dropdown {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.estacao-option {
+  font-size: 15px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: #cfcfcf;
+  border-radius: 8px;
+  width: 220px;
+  text-align: center;
+}
+
+.estacao-option-dropdown {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

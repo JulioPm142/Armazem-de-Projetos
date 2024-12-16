@@ -1,0 +1,15 @@
+click
+colorama
+Flask
+Flask-MySQLdb
+gunicorn
+importlib-metadata
+itsdangerous
+Jinja2
+MarkupSafe
+mysql-connector-python
+mysqlclient
+protobuf
+waitress
+Werkzeug
+zipp

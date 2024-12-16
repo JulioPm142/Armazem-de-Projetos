@@ -1,0 +1,244 @@
+.estacoes-container {
+    /*padding: 1.5rem 1.5rem 1.5rem 14rem;*/
+    flex-direction: column ;
+    background: #212121 repeat;
+    flex: 6;
+    min-height: 100vh;
+    
+}
+.estacoes-container .estacoes-title .cadastro-botão{
+  padding: 0 0 0 3rem;
+  
+}
+.estacoes-container .estacoes-title .cadastro-botão .btn-cadastro{
+  background-color: #448d88;
+  padding: 13px 60px;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size:23px;
+}
+
+.estacoes-container .estacoes-title .cadastro-botão .btn-cadastro:hover{
+  background: #64CCC5;
+  
+}
+
+
+.estacoes-header .estacao-box{
+  padding: 0 40px;
+}
+.estacao-box .summary{
+  font-size: 1.25rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #fff;
+  cursor: pointer;
+}
+.estacao-box .details{
+  
+  width: 100%;
+  background: #343434;
+  padding: 0.77rem;
+}
+
+.estacao-box .details p {
+  font-size: 1rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.estacoes-header .details{
+  
+    width: 100%;
+    background: #343434;
+    padding: 10px;
+    padding: 0.77rem;
+    
+}
+
+span {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.estacoes-container .estacoes-header {
+  
+  padding: 0.75rem;
+  justify-content: center;
+  align-items: center;
+}
+.estacoes-container .estacoes-title {
+    padding: 20px 20px 20px 40px;
+}
+
+.estacoes-container .estacoes-title span {
+    font-size: 1.4rem;
+    color: #fff;
+}
+
+
+.estacoes-container .box-container {
+    padding: 0 30px;
+    
+}
+
+.estacoes-container .estacoes-header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px;
+  
+}
+
+.estacoes-container .sem-estacoes {
+  justify-content: center;
+  align-items: center;  
+  padding: 0 40px;
+}
+
+.card {
+    background-image:url('https://wallpapercave.com/dwp1x/wp10154430.jpg');
+    background-size:cover; 
+    background-position:center;
+    margin: 1rem;
+    width: 15rem;
+    height: 20rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all .1s;
+    overflow: hidden;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+
+.estacoes-container .box-container .estacao .card img {
+    width: 15rem;
+    height: 13rem;
+    border-radius: 20px 20px 0 0;
+    filter: blur(1.5px);
+}
+
+.card:hover {
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
+}
+
+/* ANIMAÇÂO DO CARD */
+
+.card:hover,.card:focus-within { transform:scale(1.01); }
+
+.card-content {
+    --padding:1.5rem; padding:var(--padding);
+    background-image: linear-gradient(
+      hsl(0 0% 0%/ 0),
+      hsl(20 0% 0%/ .3)20%,
+      hsl(0 0% 0%/ .6)
+    );
+    height: 20rem;
+    
+  }
+
+  @media (hover) {
+    .card-content {
+      transform: translateY(84%);
+      transition: all .5s ease;
+    }
+    .card:hover .card-content,.card:focus-within .card-content {
+        transform: translateY(0);
+        transition-delay: .5s;
+      }
+      .card:focus-within .card-content { transition-duration:0s; }
+
+      .card:hover .card-content > *,.card:focus-within .card-content > * {
+        opacity: 20;
+        transition-delay: 1s;
+      }
+      .card:hover .card-title::after,.card:focus-within .card-title::after {        transform:scaleX(1); }
+  
+      .card-title::after { transform:scaleX(0); }
+  
+      .card-content > *:not(.card-title) {
+        opacity: 0;
+        transition: all .5s;
+  }
+  }
+
+
+/* dentro do card */
+.card-title {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  position: relative;
+  width: max-content;
+  margin-bottom: 5rem;
+  font-size: 1.4rem;
+  font-weight: 300;
+  letter-spacing: .1rem;
+  color: #EEEE;
+}
+
+.card-title::after {
+    content: ' ';
+    position:absolute; bottom:-.2rem; left:calc(var(--padding) * -1);
+    height:.5rem; width:calc(100% + var(--padding));
+    background-color: var(--color-primary);
+    transform-origin:left;
+    transition: all .4s;
+  }
+
+  .card-txt { font-size:1.21rem; }
+
+
+/* BOTAOOOOOOOOOOOOOO */
+
+.card-btn {
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 1.9rem;
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #323474;
+    padding: 1rem 3rem;
+    color: var(--color-primary);
+    font-weight: 600;
+    border-radius: .5rem;
+    transition: all .2s;
+    border: none;
+  }
+
+
+.card-btn:hover { background-color:#303266; }  
+
+
+
+/* Desligar animação
+
+
+@media (prefers-reduced-motion: reduce) { 
+  *,*::before,*::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+    scroll-behavior: auto !important;
+    transition-delay: 0ms !important;
+  }
+} 
+
+*/
+
+
+
+
+
+.estacoes-container .estacoes-header .box-container .estacao .card .card-content h2,
+.estacoes-container .estacoes-header .box-container .estacao .card .card-content p
+{
+  color: #fff;
+  font-size: 1.2rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.estacoes-container .estacoes-header .box-container .estacao .card .card-content button{
+  color: #fff;
+}

@@ -1,0 +1,149 @@
+.perfil-container-gerenciamento{
+  background: #212121; 
+  width: 100%;
+  flex: 6 1;
+  min-height: 100vh;
+  padding-left: 20px;
+}
+
+.Perfil-gerenciamento {
+    background-color: #176B87;
+    width: 800px;
+    height: 120px;
+    border-radius: 30px;
+    color: #FFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+#titulo-gerenciamento {
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+.perfil-title {
+  padding:  20px 20px 40px;
+}
+
+.Perfil-gerenciamento .perfil-left{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.Perfil-gerenciamento .perfil-left .perfil-left-text{
+  display: flex;
+  flex-direction: column;
+}
+
+.Perfil-gerenciamento .perfil-left .perfil-left-text span{
+  font-size: 1.1rem;
+}
+
+.Perfil-gerenciamento .perfil-left img {
+    width: 80px;
+    height: 85px;
+}
+
+.Perfil-gerenciamento .perfil-right label {
+    align-items: center;
+    justify-content: center;
+}
+.perfil-container-gerenciamento .box-container-gerenciamento{
+  display: flex;
+  justify-content: center;
+}
+.perfil-container-gerenciamento .whiteline{
+  border: 1px solid white;
+  padding: 20px 20px 0 20px;
+  border-radius: 20px;
+
+}
+
+.cadastro-botão-gerenciamento{
+  padding: 0 0 0 3rem;
+}
+
+.cadastro-botão-gerenciamento .btn-cadastro-gerenciamento {
+background-color: #448d88;
+padding: 13px 60px;
+border-radius: 10px;
+border: none;
+color: #fff;
+cursor: pointer;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size:23px;
+}
+
+.cadastro-botão-gerenciamento .btn-cadastro-gerenciamento:hover {
+  background: #64CCC5;
+}
+
+
+/* .perfil-container .perfil-title {
+    padding: 20px 20px 20px 40px;
+}
+
+.perfil-container .perfil-title span {
+    font-size: 1.4rem;
+    color: #fff;
+    
+} */
+
+/* .perfil-container .box-container {
+    padding: 0 40px;
+    background: #212121; 
+}
+ */
+
+
+ /* Estilos para o switch */
+.switch {
+    display: inline-block;
+    position: relative;
+    width: 50px;
+    height: 25px;
+    background-color: #ccc;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  /* Estilos para o controle deslizante (slider) */
+  .slider {
+    position: relative;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: transform 0.3s;
+  }
+  
+  /* Estilos quando o switch está ligado */
+  .switch.ligado {
+    background-color: #0d551d;
+  }
+  
+  .switch.ligado .slider {
+    transform: translateX(30px);
+    align-items: center;
+    margin-top: 4px;
+  }
+  
+  /* Estilos quando o switch está desligado */
+  .switch.desligado {
+    background-color: rgb(122, 38, 38);
+  }
+  
+  .switch.desligado .slider {
+    transform: translateX(3px);
+    align-items: center;
+    margin-top: 4px;
+  }
+
+
+  

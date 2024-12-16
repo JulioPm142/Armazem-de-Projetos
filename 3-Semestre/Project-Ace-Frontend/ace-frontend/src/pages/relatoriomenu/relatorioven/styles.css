@@ -1,0 +1,51 @@
+.bgboxSelect{
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+}
+
+.DtPag, .DtVen, .DtCre {
+    cursor: pointer;
+    display:flex;
+    margin-top: 8%;
+    border-radius: 10px;
+    border: 2.3px solid #530082 ;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 8.2%;
+    width: 100%;
+    justify-content: center;
+    background: none ;
+    color: #530082 ;
+}
+
+.DtPag:hover, .DtVen:hover, .DtCre:hover  {
+    background: #530082;
+    color: antiquewhite;
+}
+
+.boxButtons {
+    margin:0 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5% 10%;
+}
+
+details{
+    padding: 10px 20px;
+    border-bottom: 1px solid black;
+    border-radius: 10px;
+}
+
+@media (max-width:560px ){
+    .boxDate{
+        display: flex;
+        flex-direction: column;
+        gap: 23px;
+    }
+}

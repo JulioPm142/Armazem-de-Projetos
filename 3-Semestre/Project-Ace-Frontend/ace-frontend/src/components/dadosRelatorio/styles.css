@@ -1,0 +1,33 @@
+.myDiv {
+    font-size: 17px;
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    display: flex;
+    gap: 15px ;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 40%;
+  }
+  
+  table th,
+  table td {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  table th {
+    font-weight: bold;
+  }
+  
+  table td {
+    border-top: none;
+    border-bottom: none;
+  }
+  

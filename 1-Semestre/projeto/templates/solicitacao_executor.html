@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../static/img/logo2.ico" type="image/x-icon">
+
+  <title>Solicitar Serviço</title>
+
+  <link href="../static/css/bootstrap.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="../static/js/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="../static/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="../static/css/styles.css">
+  <link rel="stylesheet" href="../static/css/styles_menu.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+      </div>
+      <ul class="nav-list">
+        <li><a href="{{ url_for('consulta_executor') }}">Responder solicitações</a></li>
+        <li><a href="{{ url_for('consulta_executor2') }}">Solicitações encerradas</a></li>
+        <li><a href="{{ url_for('solicitacao_executor') }}">Solicitar serviço</a></li>
+        <li><a href="{{ url_for('consulta_executor1') }}">Minhas solicitações</a></li>
+        <li><a href="{{ url_for('altera_exe') }}">Alterar dados</a></li>
+        <li><a href="{{ url_for('login') }}">Sair</a></li>
+      </ul>
+    </nav>
+  </header>
+  <script src="../static/js/menu_api.js"></script>
+
+
+
+  <content id="fundo">
+    <br>
+    <h1>SOLICITAR SERVIÇO</h1>
+    <form action="/solicitacao_executor" method="POST" >
+      
+
+      <h6 class="form-sol">Tipo de problema:</h6>
+      <div class="form-group">
+      <select name="assunto"> 
+        
+        <option value="Problema de Hardware">Problema de Hardware</option> 
+        <option value="Problema de Software">Problema de Software</option>
+        <option value="Esclarecimento/Informação">Esclarecimento/Informação</option></select>
+      </div><br>
+
+
+      <h6 class="form-sol">Descrição:</h6>
+      <div class="form-group">
+            <textarea name="descricao" required style="resize: none;" class="form-control" id="SclienteDesc" rows="7"></textarea>
+        </div><br>
+
+
+        <div class="btn-solicita">
+          <button id="btnGerar" type="submit"class="btn btn-primary btn-salvar" href="{{ url_for('solicitacao_executor') }}" role="button" 
+          style="background-color:#BA3135; border: none; box-shadow: 0 0 0 0;" 
+          >Gerar solicitação</button><br><br>
+        </div>
+      
+    </form>
+    <br><br><br>
+
+    {% block  conteudo %}   
+    {% with resp = get_flashed_messages() %}
+       {% if resp %}
+            {% for msg in resp %}
+              <p class="alert alert-success" style=" text-align: center;"> {{msg}} </p>
+            {% endfor %}
+       {% endif %}
+     {% endwith %}  
+ 
+{% endblock %} 
+
+
+  </content>
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+[submodule "backend"]
+	path = backend
+	url = https://github.com/CloudSparkTeam/cloudSpark-warehouse.git
+[submodule "mobile"]
+	path = mobile
+	url = https://github.com/CloudSparkTeam/cloudSpark-mobile.git
+[submodule "frontend-web"]
+	path = frontend-web
+	url = https://github.com/CloudSparkTeam/cloudSpark-web.git
+[submodule "ia"]
+	path = ia
+	url = https://github.com/CloudSparkTeam/cloudSpark-terminator.git

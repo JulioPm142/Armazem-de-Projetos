@@ -1,0 +1,79 @@
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.allthings1{
+    height: 100vh;
+    width: 100%;
+}
+
+.bgboxPag {
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+}
+
+.CenterDetails{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.DetailsDate {
+    cursor: pointer;
+    width: 50%;
+    box-shadow: 3px 3px 6px -1px #444444;
+    border: 2px solid black;
+    border-radius: 15px;
+    align-items: center;
+    align-content: center;
+    margin-top: 2%;
+}
+
+input {
+    width: 100%;
+    padding: 4px; 
+    border-radius: 8px;
+}
+
+span {
+    font-weight: bold;
+}
+
+.boxDate {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    padding: 2% 10%;   
+}
+
+.row{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+@media (max-width:560px ){
+    .boxDate{
+        transition: 4s ;
+        display: flex;
+        flex-direction: column;
+        gap: 23px;
+
+        
+    }
+    h1 {
+        transition: 800ms ease;
+        font-size: 33px;
+    }
+
+      
+}
+

@@ -1,0 +1,342 @@
+.alert-container {
+    /*padding: 1.5rem 1.5rem 1.5rem 14rem;*/
+    background: #212121 repeat;
+    flex: 6;
+    min-height: 100vh;
+}
+     
+.alert-container .alert-title {
+    padding: 20px 20px 20px 40px;
+    
+}
+
+.alert-container .alert-title span {
+    color: #fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.line {
+    margin: 9px 0;
+}
+
+
+.Alertas-container {
+    padding: 0.75rem;
+    padding: 0 40px;
+    border-radius: 10px;
+    padding: 0 40px;
+    height: 10vh;
+}
+
+.alert-container .alert-title .cadastro-botão{
+    padding: 0 0 0 3rem;
+  }
+
+.alert-container .alert-title .cadastro-botão .btn-cadastro {
+background-color: #448d88;
+  padding: 13px 60px;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size:23px;
+}
+
+.alert-container .alert-title .cadastro-botão .btn-cadastro:hover {
+    background: #64CCC5;
+}
+
+.alert-container .alert-title {
+    padding: 20px 20px 20px 40px;
+}
+
+.alert-container .alert-title span {
+    font-size: 1.4rem;
+    color: #fff;
+}
+
+
+.summary {
+    font-size: 1.25rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #fff;
+
+    cursor: pointer;
+
+}
+
+.details {
+    width: 100%;
+    background: #343434;
+    padding: 0.77rem;
+    border-radius: 10px;
+}
+
+.details p {
+    font-size: 1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+
+.bgSelect{
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+
+}
+
+.boxSelect {
+    margin-top: 1vh;
+    width: 45vw;
+    padding-top: 1vh;
+    border: 1px solid black;
+    border-radius: 15px;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    flex-direction: column; 
+}
+
+details{
+    border-bottom: 1px solid black;
+    border-radius: 10px;
+}
+
+summary{
+    cursor: pointer;
+    color: #530082;
+    font-size: 20px;
+}
+
+p {
+    font-size: 17px;
+}
+
+table {
+    
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+th{
+    color:rgb(0, 0, 0);
+    font-size: 30px;
+    padding-top: 0.5vh;
+    text-align: center;
+    color:rgb(27, 102, 136)
+}
+
+td{
+    color:rgb(233, 223, 223);
+    font-size: 18px;
+    white-space: nowrap;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: center;
+    border-bottom: 1px solid #0000002a;
+    
+}
+
+
+.Listbox2 {
+    border-radius: 60px;
+    font-size: 10px;
+    position: absolute; 
+    top: 48%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    width: 80vw;
+    height: 85vh;
+    background-image: linear-gradient(to bottom, #22b9e36e,#1431b43f);
+
+}
+
+
+.RenderBackBlur2 {
+    border-radius: 60px;
+    font-size: 10px;
+    position: absolute; 
+    top: 48%; 
+    left: 50%;  
+    transform: translate(-50%, -50%);
+    width: 80vw;
+    height: 85vh;
+    backdrop-filter: blur(8px);
+    background-image: linear-gradient(to bottom, #22b9e33a,#1431b423);
+    
+  }
+
+
+.inputBox{
+    position: relative;
+    width: 300px; 
+    box-shadow: 3px 3px 6px -1px #444444;
+    border-radius: 13px;
+ }
+
+ .inputBox2{
+    text-align: left;
+ }
+ 
+ .inputBox input {
+     width: 100%;
+     padding: 5px;
+     border: 1px solid rgba(0, 0, 0, 0.25);
+     background: #ffffff;
+     border-radius: 13px;
+     outline: none;
+     color: #000;
+     font-size: 1.3em; 
+     transition: 0.5s;
+     padding-left: 5%;
+ }
+ 
+ .inputBox span{
+     font-family: sans-serif;
+     position: absolute;
+     left: 0;
+     padding: 12px;
+     pointer-events: none;
+     font-size: 1em;
+     color: rgba(0, 0, 0, 0.25);
+     text-transform: uppercase;
+     transition: 0.5s;
+ }
+ 
+ .inputBox input:valid ~ span,
+ .inputBox input:focus ~ span
+ {
+     color: #000;
+     transform: translateX(10px) translateY(-7px);
+     font-size:0.90em;
+     padding: 0px 20px;
+     background: #ffffff ;
+     border-left: 1px solid #000;
+     border-right: 1px solid #000;
+     letter-spacing: 0.2em;
+ }
+
+.mybg{
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    min-height: 38rem;
+    flex-direction: column;
+    gap: 40px;
+    background: none;
+}
+
+
+  
+
+.list-button {
+    background-color: #3358ff5e;
+    color: #FFFFFF;
+    border: none;
+    padding: 5px 5px;
+    font-size: 16px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+
+  .list-button:hover {
+    cursor: pointer;
+    background-color: #0cdddd70;
+  }
+
+
+  .button-1 {
+    background-color: #0073f761;
+    border-radius: 50px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: color 100ms;
+    vertical-align: baseline;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-1:hover{
+      cursor: pointer;
+      background-color: #0cdddd70;
+  }
+
+
+.arruma{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background: none;
+    gap: 10px;
+    margin-bottom: 1vh;
+}
+
+.pageButtom{
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+
+.centraliza{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.pesquisaInput{
+    width: 15vw;
+    height: 3vh;
+    border-radius: 50px;
+    color: black;
+    font-size: 20px;
+
+}
+
+.pesquisaInput::placeholder {
+    color: #000000;
+  }
+
+  
+.alertBox{
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 70vw;
+    height: 20vh;
+    margin-bottom: 2vh;
+    /* background-color: #00000041; */
+
+}
+
+.alertaItem{
+    color: white;
+    width: 8vw;
+    background-color: rgba(49, 49, 49, 0.175);
+    border-radius: 20px;
+}
+
+.alertaItem:hover{
+    background-color: #ffffff2f;
+    cursor: pointer;
+}
